@@ -9,14 +9,14 @@ node {
 
     stage('Build image') {
   
-       app = docker.build("raj80dockerid/test")
+       app = docker.build("mudassirmukhtar/labdemo")
     }
 
     stage('Test image') {
   
 
         app.inside {
-            sh 'echo "Tests passed"'
+            sh 'echo "this is the main branch"'
         }
     }
 
